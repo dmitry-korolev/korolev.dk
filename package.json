@@ -1,0 +1,47 @@
+{
+  "name": "korolev.dk",
+  "version": "0.0.0",
+  "description": "Personal website",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "lint-staged": {
+    "*.{js,json,css,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "author": "Dmitry Korolev <dmitry@korolev.dk> (https://korolev.dk)",
+  "license": "MIT",
+  "dependencies": {
+    "@types/next": "^7.0.5",
+    "@zeit/next-typescript": "^1.1.1",
+    "next": "^7.0.2",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "styled-components": "^4.1.1"
+  },
+  "devDependencies": {
+    "@types/react": "^16.7.6",
+    "@types/styled-components": "^4.1.0",
+    "commitizen": "^3.0.4",
+    "cz-conventional-changelog": "^2.1.0",
+    "husky": "^1.1.4",
+    "lint-staged": "^8.0.5",
+    "prettier": "1.15.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
+}
