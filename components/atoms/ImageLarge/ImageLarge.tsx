@@ -1,12 +1,12 @@
 import styled from 'styled-components'
 
-export const NotFoundContainer = styled.div`
+const Container = styled.div`
   display: block;
   position: relative;
   overflow: hidden;
 `
 
-export const Text = styled.strong`
+const Text = styled.strong`
   bottom: 60px;
   color: white;
   display: block;
@@ -20,3 +20,9 @@ export const Text = styled.strong`
   text-transform: uppercase;
   width: 100%;
 `
+
+
+export const ImageLarge = ({ src, text }: { src: string, text: string }) => <Container>
+  <img src={ src } />
+  <Text>{ text }</Text>
+</Container>

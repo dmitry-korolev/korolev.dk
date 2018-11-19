@@ -1,12 +1,9 @@
-import { Text, NotFoundContainer } from './NotFound.styled'
 import i404 from './404.jpg'
+import { ImageLarge } from '../../atoms/ImageLarge/ImageLarge'
 
 export const NotFound = () => (
   <article>
-    <NotFoundContainer>
-      <img src={i404}/>
-      <Text>404</Text>
-    </NotFoundContainer>
+    <ImageLarge src={i404} text='404'/>
     <p>
       К сожалению, по этому адресу ничего нет. Попробуйте поиск.
     </p>

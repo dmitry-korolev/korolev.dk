@@ -2,7 +2,7 @@ import React from 'react'
 import { NextContext } from 'next'
 
 // Components
-import { NotFound } from '../components/errors/NotFound/NotFound'
+import { NotFound } from '../components/templates/NotFound/NotFound'
 
 export default class Error extends React.Component<{ statusCode: number }> {
   static getInitialProps({ res, err }: NextContext) {

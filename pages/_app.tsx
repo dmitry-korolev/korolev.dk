@@ -1,6 +1,14 @@
-import React from 'react'
-import App, { Container, NextAppContext } from 'next/app'
-import { AppContainer } from '../components/app/App'
+import App, { Container as NextContainer, NextAppContext } from 'next/app'
+import styled from 'styled-components'
+import { Normalize } from 'styled-normalize'
+import { Variables } from '../components/style/Variables'
+import { Common } from '../components/style/Common'
+
+const Container = styled.div`
+  display: block;
+  margin: 0 auto;
+  max-width: var(--size__site-width);
+`
 
 export default class MyApp extends App {
   static async getInitialProps({ Component, ctx }: NextAppContext) {
@@ -17,11 +25,14 @@ export default class MyApp extends App {
     const { Component, pageProps } = this.props
 
     return (
-      <Container>
-        <AppContainer>
+      <NextContainer>
+        <Container>
           <Component {...pageProps} />
-        </AppContainer>
-      </Container>
+        </Container>
+        <Normalize />
+        <Variables />
+        <Common />
+      </NextContainer>
     )
   }
 }
