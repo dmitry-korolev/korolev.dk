@@ -12,6 +12,7 @@ const Container = styled.div`
   
   background-image: url(${(p: { src: string }) => p.src});
   background-size: cover;
+  background-position: 20% 0;
 `
 
 const Text = styled.strong`
