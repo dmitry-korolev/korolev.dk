@@ -1,13 +1,14 @@
 import { createGlobalStyle } from 'styled-components'
+import { MainTheme } from '../../utils/styles/getTheme/getTheme.h'
 
-export const Common = createGlobalStyle`  
+export const Common = createGlobalStyle<{ theme: MainTheme }>`  
   * {
     box-sizing: border-box;
   }
   
-  html {
+  body {
     font-family: 'Open Sans', sans-serif;
-    font-size: calc(var(--size__base-font) / 16 * 100%);
+    font-size: ${props => props.theme.sizes.body};
     -webkit-font-smoothing: antialiased;
   }
   

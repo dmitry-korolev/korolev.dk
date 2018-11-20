@@ -1,13 +1,14 @@
 import App, { Container as NextContainer, NextAppContext } from 'next/app'
-import styled from 'styled-components'
+import styled, { ThemeProvider } from 'styled-components'
 import { Normalize } from 'styled-normalize'
-import { Variables } from '../components/style/Variables'
-import { Common } from '../components/style/Common'
+import { getTheme } from '../utils/styles/getTheme/getTheme'
+import { Common } from '../components/styles/Common'
+import { MainTheme } from '../utils/styles/getTheme/getTheme.h'
 
 const Container = styled.div`
   display: block;
   margin: 0 auto;
-  max-width: var(--size__site-width);
+  max-width: ${(p: { theme: MainTheme }) => p.theme.layout.maxWidth};
 `
 
 export default class MyApp extends App {
@@ -23,15 +24,17 @@ export default class MyApp extends App {
 
   render () {
     const { Component, pageProps } = this.props
+    const theme = getTheme()
 
     return (
       <NextContainer>
-        <Container>
-          <Component {...pageProps} />
-        </Container>
+        <ThemeProvider theme={theme}>
+          <Container>
+            <Component {...pageProps} />
+          </Container>
+        </ThemeProvider>
+        <Common theme={theme}/>
         <Normalize />
-        <Variables />
-        <Common />
       </NextContainer>
     )
   }
