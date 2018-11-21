@@ -1,4 +1,5 @@
 declare module 'shevyjs' {
+  export type Line = { fontSize: string, lineHeight: number, marginBottom: string }
   export default class {
     constructor (config?: {
       baseFontSize?: string
@@ -9,16 +10,16 @@ declare module 'shevyjs' {
       proximityFactor?: number
     })
 
-    h1: { fontSize: string, lineHeight: number, marginBottom: string }
-    h2: { fontSize: string, lineHeight: number, marginBottom: string }
-    h3: { fontSize: string, lineHeight: number, marginBottom: string }
-    h4: { fontSize: string, lineHeight: number, marginBottom: string }
-    h5: { fontSize: string, lineHeight: number, marginBottom: string }
-    h6: { fontSize: string, lineHeight: number, marginBottom: string }
+    h1: Line
+    h2: Line
+    h3: Line
+    h4: Line
+    h5: Line
+    h6: Line
 
     body: { fontSize: string, lineHeight: number }
 
-    content: { fontSize: string, lineHeight: number, marginBottom: string }
+    content: Line
 
     lineHeightSpacing (n?: number): string
 

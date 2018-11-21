@@ -1,10 +1,8 @@
 import { Component } from 'react';
-import styled from 'styled-components'
 import { NextContext } from 'next'
+import { Paragraph } from '../components/atoms/Paragraph/Paragraph'
+import { Header } from '../components/molecules/Header/Header'
 
-const Title = styled.h1`
-  color: red;
-`
 
 export default class extends Component<{ userAgent: string }> {
   static async getInitialProps({ req }: NextContext) {
@@ -14,9 +12,25 @@ export default class extends Component<{ userAgent: string }> {
 
   render() {
     return (
-      <div>
-        <Title>Hello World {this.props.userAgent}</Title>
-      </div>
+      <>
+        <Header
+          title='Пингвин Рыба Есть'
+          subtitle='dmitry@korolev.dk'
+          level={1}
+        />
+        <Paragraph>Hello World {this.props.userAgent}</Paragraph>
+        <Paragraph>Hello World {this.props.userAgent}</Paragraph>
+        <Paragraph>Hello World {this.props.userAgent}</Paragraph>
+
+        <Header
+          title={`Hello world ${this.props.userAgent}`}
+          subtitle={`Hello world ${this.props.userAgent}`}
+          level={2}
+        />
+        <Paragraph>Hello World {this.props.userAgent}</Paragraph>
+        <Paragraph>Hello World {this.props.userAgent}</Paragraph>
+        <Paragraph>Hello World {this.props.userAgent}</Paragraph>
+      </>
     )
   }
 }

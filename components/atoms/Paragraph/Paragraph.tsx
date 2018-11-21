@@ -1,8 +1,10 @@
 import styled from 'styled-components'
-import { MainTheme } from '../../../utils/styles/getTheme/getTheme.h'
+import { path } from 'ramda'
 
 export const Paragraph = styled.p`
-  font-size: ${(p: { theme: MainTheme }) => p.theme.sizes.content.fontSize};
-  line-height: ${p => p.theme.sizes.content.lineHeight};
-  margin-bottom: ${p => p.theme.sizes.content.marginBottom}
+  font-size: ${path(['theme', 'sizes', 'content', 'fontSize'])};
+  line-height: ${path(['theme', 'sizes', 'content', 'lineHeight'])};
+  
+  margin-top: 0;
+  margin-bottom: ${path(['theme', 'sizes', 'content', 'marginBottom'])};
 `

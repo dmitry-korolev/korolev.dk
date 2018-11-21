@@ -1,6 +1,6 @@
 const withTypescript = require('@zeit/next-typescript')
 const withImages = require('next-images')
-const { compose } = require('rambdax')
+const { compose } = require('ramda')
 
 module.exports = () => {
   const config = {}

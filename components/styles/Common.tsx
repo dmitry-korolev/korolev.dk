@@ -1,21 +1,15 @@
 import { createGlobalStyle } from 'styled-components'
-import { MainTheme } from '../../utils/styles/getTheme/getTheme.h'
+import { Theme } from '../../utils/styles/getTheme/getTheme.h'
 
-export const Common = createGlobalStyle<{ theme: MainTheme }>`  
+export const Common = createGlobalStyle<{ theme: Theme }>`  
   * {
     box-sizing: border-box;
   }
   
   body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: ${props => props.theme.font.main};
     font-size: ${props => props.theme.sizes.body};
     -webkit-font-smoothing: antialiased;
-  }
-  
-  p {
-    line-height: var(--size__leading);
-    margin-top: var(--size__leading);
-    margin-bottom: 0;
   }
   
   ul,
@@ -39,23 +33,4 @@ export const Common = createGlobalStyle<{ theme: MainTheme }>`
     margin-top: var(--size__leading);
     margin-bottom: var(--size__leading);
   }
-  
-  /* Tables */
-  table {
-    margin-top: var(--size__leading);
-    border-spacing: 0;
-    border-collapse: collapse;
-  
-    td,
-    th {
-      padding: 0;
-      line-height: calc(var(--size__base-line-height) * var(--size__base-font) * 1px);
-    }
-  }
-  
-  /* Code blocks */
-  code {
-    vertical-align: bottom;
-  }
-
 `

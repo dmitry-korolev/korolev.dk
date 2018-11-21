@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { prop } from 'ramda'
 
 const Container = styled.div`
   display: block;
@@ -10,7 +11,7 @@ const Container = styled.div`
   left: 0;
   top: 0;
   
-  background-image: url(${(p: { src: string }) => p.src});
+  background-image: url(${prop('src')});
   background-size: cover;
   background-position: 20% 0;
 `
