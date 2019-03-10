@@ -6,7 +6,11 @@ import { NotFound } from '../components/templates/NotFound/NotFound'
 
 export default class Error extends React.Component<{ statusCode: number }> {
   static getInitialProps({ res, err }: NextContext) {
-    const statusCode = res ? res.statusCode : err ? (err as any).statusCode : null
+    const statusCode = res
+      ? res.statusCode
+      : err
+      ? (err as any).statusCode
+      : null
     return { statusCode }
   }
 

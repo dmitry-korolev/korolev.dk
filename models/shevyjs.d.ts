@@ -10,6 +10,10 @@ declare module 'shevyjs' {
       proximityFactor?: number
     })
 
+    baseFontSize: string
+    baseLineHeight: number
+    baseFontScale: number[]
+
     h1: Line
     h2: Line
     h3: Line

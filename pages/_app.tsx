@@ -1,14 +1,14 @@
 import App, { Container as NextContainer, NextAppContext } from 'next/app'
-import styled, { ThemeProvider } from 'styled-components'
-import { Normalize } from 'styled-normalize'
-import { getTheme } from '../utils/styles/getTheme/getTheme'
-import { Common } from '../components/styles/Common'
-import { Theme } from '../utils/styles/getTheme/getTheme.h'
+import styled from 'styled-components'
+import 'normalize.css/normalize.css'
 
 const Container = styled.div`
-  display: block;
   margin: 0 auto;
-  max-width: ${(p: { theme: Theme }) => p.theme.layout.maxWidth};
+  max-width: var(--siteWidth);
+`
+
+const Darker = styled.div`
+  background: rgba(0, 0, 0, 0.4);
 `
 
 export default class MyApp extends App {
@@ -24,17 +24,14 @@ export default class MyApp extends App {
 
   render () {
     const { Component, pageProps } = this.props
-    const theme = getTheme()
 
     return (
       <NextContainer>
-        <ThemeProvider theme={theme}>
+        <Darker>
           <Container>
             <Component {...pageProps} />
           </Container>
-        </ThemeProvider>
-        <Common theme={theme}/>
-        <Normalize />
+        </Darker>
       </NextContainer>
     )
   }
