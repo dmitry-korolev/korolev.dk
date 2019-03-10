@@ -114,7 +114,7 @@ export const Status = () => {
                 <span>E-Mail:&nbsp;</span> <a href="mailto:dima@korolev.dk">dima@korolev.dk</a>
               </li>
               <li>
-                <span>Phone:&nbsp;</span> <span>+7 (926) 211-08-93</span>
+                <span>Phone:&nbsp;</span> <a href="tel:+79262110893">+7 (926) 211-08-93</a>
               </li>
             </List>
           </Contacts>
