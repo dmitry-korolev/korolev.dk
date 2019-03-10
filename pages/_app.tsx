@@ -1,6 +1,7 @@
 import App, { Container as NextContainer, NextAppContext } from 'next/app'
 import styled from 'styled-components'
 import 'normalize.css/normalize.css'
+import { Common } from '../components/styles/Common'
 
 const Container = styled.div`
   margin: 0 auto;
@@ -27,6 +28,7 @@ export default class MyApp extends App {
 
     return (
       <NextContainer>
+        <Common />
         <Darker>
           <Container>
             <Component {...pageProps} />

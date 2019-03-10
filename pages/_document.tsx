@@ -5,16 +5,27 @@ import Document, {
   NextScript
 } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
-import { Common } from '../components/styles/Common'
 
 export default class MyDocument extends Document<{ styleTags: any }> {
-  static getInitialProps({ renderPage }: NextDocumentContext) {
+  static async getInitialProps (ctx: NextDocumentContext) {
     const sheet = new ServerStyleSheet()
-    const page = renderPage((App) => (props) =>
-      sheet.collectStyles(<App {...props} />)
-    )
-    const styleTags = sheet.getStyleElement()
-    return { ...page, styleTags }
+    const originalRenderPage = ctx.renderPage
+
+    try {
+      ctx.renderPage = () =>
+        originalRenderPage({
+          enhanceApp: App => props => sheet.collectStyles(<App {...props} />)
+        })
+
+      const initialProps = await Document.getInitialProps(ctx)
+
+      return {
+        ...initialProps,
+        styles: <>{initialProps.styles}{sheet.getStyleElement()}</>
+      }
+    } finally {
+      sheet.seal()
+    }
   }
 
   render() {
@@ -30,7 +41,6 @@ export default class MyDocument extends Document<{ styleTags: any }> {
           {this.props.styleTags}
         </Head>
         <body>
-          <Common />
           <Main />
           <NextScript />
         </body>
