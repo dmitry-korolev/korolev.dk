@@ -97,7 +97,8 @@ export const Status = () => {
               the world's largest fully online bank, as a Frontend Team Lead.
             </p>
             <p>
-              See more information at <a href="https://www.linkedin.com/in/dmitry-korolev/">my LinkedIn page</a>.
+              See more information at my <a href="https://www.linkedin.com/in/dmitry-korolev/">LinkedIn</a> and <a
+              href="https://github.com/dmitry-korolev">GitHub</a> pages.
             </p>
           </Bio>
 
