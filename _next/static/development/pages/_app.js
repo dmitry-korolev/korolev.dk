@@ -1,5 +1,36 @@
 ((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/_app.js"],{
 
+/***/ "./components/styles/Common.tsx":
+/*!**************************************!*\
+  !*** ./components/styles/Common.tsx ***!
+  \**************************************/
+/*! exports provided: Common */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Common", function() { return Common; });
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _utils_styles_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../utils/styles/styles */ "./utils/styles/styles.ts");
+
+
+function _templateObject() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n      * {\n        box-sizing: border-box;\n      }\n       \n      :root {\n        --baseLineHeight: ", ";\n        --baseSpacing: ", ";\n        --siteWidth: ", ";\n        --h1height: calc(", " * ", ");\n      }\n\n      body {\n        ", ";\n\n        font-family: 'Press Start 2P', 'Helvetica Neue', Helvetica, Arial,\n          sans-serif;\n        color: #fff8dc;\n        -webkit-font-smoothing: antialiased;\n\n        background: #000000 url('/static/background.png') repeat-x;\n        background-size: auto 100vh;\n\n        min-height: 100vh;\n      }\n      \n      a {\n        color: #fffdf5;\n        \n        &:hover {\n          color: #d0cab4;\n        }\n      }\n\n      p, ul, ol, blockquote, li {\n        padding: 0;\n        margin: 0;\n        ", ";\n      }\n\n      h1, h2, h3, h4, h5, h6 {\n        margin-top: 0;\n      }\n      \n      h1 {\n        ", ";\n      }\n\n      h2 {\n        ", ";\n      }\n\n      h3 {\n        ", ";\n      }\n\n      h4 {\n        ", ";\n      }\n\n      h5 {\n        ", ";\n      }\n\n      h6 {\n        ", ";\n      }\n      \n      ul {\n        list-style-position: inside;\n      }\n    "]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+
+
+var Common = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["createGlobalStyle"])(_templateObject(), _utils_styles_styles__WEBPACK_IMPORTED_MODULE_2__["shevy"].baseLineHeight, _utils_styles_styles__WEBPACK_IMPORTED_MODULE_2__["shevy"].baseSpacing(1), _utils_styles_styles__WEBPACK_IMPORTED_MODULE_2__["shevy"].baseSpacing(30), _utils_styles_styles__WEBPACK_IMPORTED_MODULE_2__["shevy"].h1.fontSize, _utils_styles_styles__WEBPACK_IMPORTED_MODULE_2__["shevy"].h1.lineHeight, _utils_styles_styles__WEBPACK_IMPORTED_MODULE_2__["shevy"].body, _utils_styles_styles__WEBPACK_IMPORTED_MODULE_2__["shevy"].content, _utils_styles_styles__WEBPACK_IMPORTED_MODULE_2__["shevy"].h1, _utils_styles_styles__WEBPACK_IMPORTED_MODULE_2__["shevy"].h2, _utils_styles_styles__WEBPACK_IMPORTED_MODULE_2__["shevy"].h3, _utils_styles_styles__WEBPACK_IMPORTED_MODULE_2__["shevy"].h4, _utils_styles_styles__WEBPACK_IMPORTED_MODULE_2__["shevy"].h5, _utils_styles_styles__WEBPACK_IMPORTED_MODULE_2__["shevy"].h6);
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/array/is-array.js":
 /*!***********************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/core-js/array/is-array.js ***!
@@ -44,6 +75,17 @@ module.exports = __webpack_require__(/*! core-js/library/fn/object/create */ "./
 
 /***/ }),
 
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/define-properties.js":
+/*!*********************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/define-properties.js ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/object/define-properties */ "./node_modules/core-js/library/fn/object/define-properties.js");
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js":
 /*!*******************************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js ***!
@@ -52,6 +94,17 @@ module.exports = __webpack_require__(/*! core-js/library/fn/object/create */ "./
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(/*! core-js/library/fn/object/define-property */ "./node_modules/core-js/library/fn/object/define-property.js");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/freeze.js":
+/*!**********************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/freeze.js ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/object/freeze */ "./node_modules/core-js/library/fn/object/freeze.js");
 
 /***/ }),
 
@@ -662,6 +715,36 @@ function _slicedToArray(arr, i) {
 
 /***/ }),
 
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js":
+/*!**********************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js ***!
+  \**********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _taggedTemplateLiteral; });
+/* harmony import */ var _core_js_object_define_properties__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/define-properties */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-properties.js");
+/* harmony import */ var _core_js_object_define_properties__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_define_properties__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _core_js_object_freeze__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core-js/object/freeze */ "./node_modules/@babel/runtime-corejs2/core-js/object/freeze.js");
+/* harmony import */ var _core_js_object_freeze__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_freeze__WEBPACK_IMPORTED_MODULE_1__);
+
+
+function _taggedTemplateLiteral(strings, raw) {
+  if (!raw) {
+    raw = strings.slice(0);
+  }
+
+  return _core_js_object_freeze__WEBPACK_IMPORTED_MODULE_1___default()(_core_js_object_define_properties__WEBPACK_IMPORTED_MODULE_0___default()(strings, {
+    raw: {
+      value: _core_js_object_freeze__WEBPACK_IMPORTED_MODULE_1___default()(raw)
+    }
+  }));
+}
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/typeof.js":
 /*!*******************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/typeof.js ***!
@@ -1024,6 +1107,22 @@ module.exports = function create(P, D) {
 
 /***/ }),
 
+/***/ "./node_modules/core-js/library/fn/object/define-properties.js":
+/*!*********************************************************************!*\
+  !*** ./node_modules/core-js/library/fn/object/define-properties.js ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! ../../modules/es6.object.define-properties */ "./node_modules/core-js/library/modules/es6.object.define-properties.js");
+var $Object = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Object;
+module.exports = function defineProperties(T, D) {
+  return $Object.defineProperties(T, D);
+};
+
+
+/***/ }),
+
 /***/ "./node_modules/core-js/library/fn/object/define-property.js":
 /*!*******************************************************************!*\
   !*** ./node_modules/core-js/library/fn/object/define-property.js ***!
@@ -1036,6 +1135,19 @@ var $Object = __webpack_require__(/*! ../../modules/_core */ "./node_modules/cor
 module.exports = function defineProperty(it, key, desc) {
   return $Object.defineProperty(it, key, desc);
 };
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/fn/object/freeze.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/core-js/library/fn/object/freeze.js ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! ../../modules/es6.object.freeze */ "./node_modules/core-js/library/modules/es6.object.freeze.js");
+module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Object.freeze;
 
 
 /***/ }),
@@ -3600,6 +3712,20 @@ $export($export.S, 'Object', { create: __webpack_require__(/*! ./_object-create 
 
 /***/ }),
 
+/***/ "./node_modules/core-js/library/modules/es6.object.define-properties.js":
+/*!******************************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/es6.object.define-properties.js ***!
+  \******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/library/modules/_export.js");
+// 19.1.2.3 / 15.2.3.7 Object.defineProperties(O, Properties)
+$export($export.S + $export.F * !__webpack_require__(/*! ./_descriptors */ "./node_modules/core-js/library/modules/_descriptors.js"), 'Object', { defineProperties: __webpack_require__(/*! ./_object-dps */ "./node_modules/core-js/library/modules/_object-dps.js") });
+
+
+/***/ }),
+
 /***/ "./node_modules/core-js/library/modules/es6.object.define-property.js":
 /*!****************************************************************************!*\
   !*** ./node_modules/core-js/library/modules/es6.object.define-property.js ***!
@@ -3610,6 +3736,26 @@ $export($export.S, 'Object', { create: __webpack_require__(/*! ./_object-create 
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/library/modules/_export.js");
 // 19.1.2.4 / 15.2.3.6 Object.defineProperty(O, P, Attributes)
 $export($export.S + $export.F * !__webpack_require__(/*! ./_descriptors */ "./node_modules/core-js/library/modules/_descriptors.js"), 'Object', { defineProperty: __webpack_require__(/*! ./_object-dp */ "./node_modules/core-js/library/modules/_object-dp.js").f });
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/modules/es6.object.freeze.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/es6.object.freeze.js ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// 19.1.2.5 Object.freeze(O)
+var isObject = __webpack_require__(/*! ./_is-object */ "./node_modules/core-js/library/modules/_is-object.js");
+var meta = __webpack_require__(/*! ./_meta */ "./node_modules/core-js/library/modules/_meta.js").onFreeze;
+
+__webpack_require__(/*! ./_object-sap */ "./node_modules/core-js/library/modules/_object-sap.js")('freeze', function ($freeze) {
+  return function freeze(it) {
+    return $freeze && isObject(it) ? $freeze(meta(it)) : it;
+  };
+});
 
 
 /***/ }),
@@ -8914,6 +9060,260 @@ if (hadRuntime) {
 
 /***/ }),
 
+/***/ "./node_modules/shevyjs/dist/constants/index.js":
+/*!******************************************************!*\
+  !*** ./node_modules/shevyjs/dist/constants/index.js ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var fontScalePresets = exports.fontScalePresets = {
+  majorSecond: [1.802, 1.602, 1.424, 1.266, 1.125, 1],
+  minorThird: [2.488, 2.074, 1.728, 1.44, 1.2, 1],
+  majorThird: [3.052, 2.441, 1.953, 1.563, 1.25, 1],
+  perfectFourth: [4.209, 3.157, 2.369, 1.777, 1.333, 1],
+  augmentedFourth: [5.653, 3.998, 2.827, 1.999, 1.414, 1]
+};
+
+var defaultOptions = exports.defaultOptions = {
+  baseFontSize: '16px',
+  baseLineHeight: 1.5,
+  baseFontScale: [3, 2.5, 2, 1.5, 1.25, 1],
+  addMarginBottom: true,
+  proximity: false,
+  proximityFactor: 0.85
+};
+
+var headings = exports.headings = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'];
+
+/***/ }),
+
+/***/ "./node_modules/shevyjs/dist/index.js":
+/*!********************************************!*\
+  !*** ./node_modules/shevyjs/dist/index.js ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _constants = __webpack_require__(/*! ./constants */ "./node_modules/shevyjs/dist/constants/index.js");
+
+var _utils = __webpack_require__(/*! ./utils */ "./node_modules/shevyjs/dist/utils/index.js");
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var Shevy = function () {
+  function Shevy(options) {
+    var _this = this;
+
+    _classCallCheck(this, Shevy);
+
+    var mergedOptions = _extends({}, _constants.defaultOptions, options);
+    var baseFontSize = mergedOptions.baseFontSize,
+        baseLineHeight = mergedOptions.baseLineHeight,
+        baseFontScale = mergedOptions.baseFontScale,
+        addMarginBottom = mergedOptions.addMarginBottom,
+        proximity = mergedOptions.proximity,
+        proximityFactor = mergedOptions.proximityFactor;
+
+
+    this.baseFontSize = baseFontSize;
+    this.baseFontUnit = (0, _utils.getFontUnit)(baseFontSize);
+    this.baseLineHeight = baseLineHeight;
+    this.baseFontScale = (0, _utils.getFontScale)(baseFontScale);
+    this.addMarginBottom = addMarginBottom;
+    this.proximity = proximity;
+    this.proximityFactor = proximityFactor;
+
+    // Binding methods
+    this.lineHeightSpacing = this.lineHeightSpacing.bind(this);
+    this.baseSpacing = this.baseSpacing.bind(this);
+
+    // Set headings
+    this.baseFontScale.forEach(function (factor, index) {
+      var heading = _constants.headings[index];
+      _this[heading] = {
+        fontSize: (0, _utils.calcHeadingFontSize)(_this, factor),
+        lineHeight: (0, _utils.calcHeadingLineHeight)(_this, factor),
+        marginBottom: (0, _utils.calcHeadingMarginBottom)(_this, factor, addMarginBottom)
+      };
+    });
+
+    // Set Body
+    this.body = {
+      fontSize: this.baseFontSize,
+      lineHeight: this.baseLineHeight
+    };
+
+    // Set Content
+    this.content = {
+      fontSize: this.baseFontSize,
+      lineHeight: this.baseLineHeight,
+      marginBottom: addMarginBottom ? this.baseSpacing() : undefined
+    };
+  }
+
+  _createClass(Shevy, [{
+    key: 'lineHeightSpacing',
+    value: function lineHeightSpacing() {
+      var factor = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 1;
+      var baseFontSize = this.baseFontSize,
+          baseLineHeight = this.baseLineHeight;
+
+      var value = (0, _utils.getFontValue)(baseFontSize);
+      var unit = (0, _utils.getFontUnit)(baseFontSize);
+
+      return '' + value * baseLineHeight * factor + unit;
+    }
+  }, {
+    key: 'baseSpacing',
+    value: function baseSpacing() {
+      var factor = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 1;
+      var baseFontSize = this.baseFontSize,
+          baseLineHeight = this.baseLineHeight,
+          proximity = this.proximity,
+          proximityFactor = this.proximityFactor;
+
+      var value = (0, _utils.getFontValue)(baseFontSize);
+      var unit = (0, _utils.getFontUnit)(baseFontSize);
+      var spacing = value * baseLineHeight * factor;
+
+      if (proximity) {
+        spacing = spacing * proximityFactor;
+      }
+
+      return '' + spacing + unit;
+    }
+  }]);
+
+  return Shevy;
+}();
+
+exports.default = Shevy;
+
+/***/ }),
+
+/***/ "./node_modules/shevyjs/dist/utils/index.js":
+/*!**************************************************!*\
+  !*** ./node_modules/shevyjs/dist/utils/index.js ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.getFontScale = exports.trimArrayToMaxOf6 = exports.getFontUnit = exports.getFontValue = undefined;
+exports.calcHeadingFontSize = calcHeadingFontSize;
+exports.calcHeadingLineHeight = calcHeadingLineHeight;
+exports.calcHeadingMarginBottom = calcHeadingMarginBottom;
+
+var _constants = __webpack_require__(/*! ../constants */ "./node_modules/shevyjs/dist/constants/index.js");
+
+var getFontValue = exports.getFontValue = function getFontValue(size) {
+  return parseFloat(size);
+};
+
+var getFontUnit = exports.getFontUnit = function getFontUnit(size) {
+  var match = size.match(/px|r?em$/);
+
+  if (!match) {
+    throw new Error('Unsupported font unit: Shevy only supports px, em, or rem.');
+  }
+
+  return match[0];
+};
+
+var trimArrayToMaxOf6 = exports.trimArrayToMaxOf6 = function trimArrayToMaxOf6(array) {
+  return array.length <= 6 ? array : array.slice(0, 6);
+};
+
+var getFontScale = exports.getFontScale = function getFontScale(fontScale) {
+  if (Array.isArray(fontScale)) {
+    return trimArrayToMaxOf6(fontScale);
+  }
+
+  if (_constants.fontScalePresets.hasOwnProperty(fontScale)) {
+    return _constants.fontScalePresets[fontScale];
+  } else {
+    throw new Error('No Font Scale Preset Found for "' + fontScale + '", the presets available are: "' + Object.keys(_constants.fontScalePresets) + '"');
+  }
+};
+
+function calcHeadingFontSize(thisArg, factor) {
+  var baseFontSize = thisArg.baseFontSize;
+
+  var value = getFontValue(baseFontSize);
+  var unit = getFontUnit(baseFontSize);
+
+  return '' + value * factor + unit;
+}
+
+function calcHeadingLineHeight(thisArg, factor) {
+  var lineHeightSpacing = thisArg.lineHeightSpacing;
+
+  var fontSize = calcHeadingFontSize(thisArg, factor);
+  var fontValue = getFontValue(fontSize);
+  var spacing = lineHeightSpacing();
+  var spacingValue = getFontValue(spacing);
+  var lineHeight = 0;
+  var multiplier = 1;
+
+  if (fontValue <= spacingValue) {
+    lineHeight = spacingValue / fontValue;
+  } else {
+    while (getFontValue(lineHeightSpacing(multiplier)) < fontValue) {
+      multiplier += 0.5;
+    }
+
+    lineHeight = getFontValue(lineHeightSpacing(multiplier)) / fontValue;
+  }
+
+  return lineHeight;
+}
+
+function calcHeadingMarginBottom(thisArg, factor, addMarginBottom) {
+  if (!addMarginBottom) {
+    return undefined;
+  }
+
+  var baseSpacing = thisArg.baseSpacing;
+
+  var spacing = baseSpacing();
+  var spacingUnit = getFontUnit(spacing);
+
+  if (spacingUnit === 'em') {
+    var fontSize = calcHeadingFontSize(thisArg, factor);
+    var fontValue = getFontValue(fontSize);
+    var spacingValue = getFontValue(spacing);
+
+    return '' + spacingValue / fontValue + spacingUnit;
+  } else {
+    return spacing;
+  }
+}
+
+/***/ }),
+
 /***/ "./node_modules/styled-components/dist/styled-components.browser.esm.js":
 /*!******************************************************************************!*\
   !*** ./node_modules/styled-components/dist/styled-components.browser.esm.js ***!
@@ -12369,6 +12769,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var normalize_css_normalize_css__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! normalize.css/normalize.css */ "./node_modules/normalize.css/normalize.css");
 /* harmony import */ var normalize_css_normalize_css__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(normalize_css_normalize_css__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _components_styles_Common__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../components/styles/Common */ "./components/styles/Common.tsx");
 
 
 
@@ -12378,6 +12779,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var _jsxFileName = "/Users/d.a.korolev/Projects/__personal/korolev.dk/pages/_app.tsx";
+
 
 
 
@@ -12409,25 +12811,31 @@ function (_App) {
       return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(next_app__WEBPACK_IMPORTED_MODULE_9__["Container"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 29
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(Darker, {
-        __source: {
-          fileName: _jsxFileName,
           lineNumber: 30
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(Container, {
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_components_styles_Common__WEBPACK_IMPORTED_MODULE_12__["Common"], {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 31
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(Component, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({}, pageProps, {
+      }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(Darker, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 32
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(Container, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 33
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(Component, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({}, pageProps, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 34
         },
         __self: this
       })))));
@@ -12482,6 +12890,26 @@ function (_App) {
 }(next_app__WEBPACK_IMPORTED_MODULE_9___default.a);
 
 
+
+/***/ }),
+
+/***/ "./utils/styles/styles.ts":
+/*!********************************!*\
+  !*** ./utils/styles/styles.ts ***!
+  \********************************/
+/*! exports provided: shevy */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "shevy", function() { return shevy; });
+/* harmony import */ var shevyjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! shevyjs */ "./node_modules/shevyjs/dist/index.js");
+/* harmony import */ var shevyjs__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(shevyjs__WEBPACK_IMPORTED_MODULE_0__);
+
+var shevy = new shevyjs__WEBPACK_IMPORTED_MODULE_0___default.a({
+  baseFontSize: '18px',
+  baseFontScale: 'minorThird'
+});
 
 /***/ }),
 
