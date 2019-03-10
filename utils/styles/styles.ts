@@ -1,6 +1,6 @@
 import Shevy from 'shevyjs'
 
 export const shevy = new Shevy({
-  baseFontSize: '20px',
+  baseFontSize: '18px',
   baseFontScale: 'minorThird'
 })

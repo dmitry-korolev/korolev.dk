@@ -10,6 +10,7 @@ export const Common = createGlobalStyle`
         --baseLineHeight: ${shevy.baseLineHeight};
         --baseSpacing: ${shevy.baseSpacing(1)};
         --siteWidth: ${shevy.baseSpacing(30)};
+        --h1height: calc(${shevy.h1.fontSize} * ${shevy.h1.lineHeight});
       }
 
       body {

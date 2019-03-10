@@ -23,8 +23,11 @@ const GridContainer = styled.div`
 
 const Header = styled.header`
   grid-column: span 4;
+  
+  //display: flex;
+  //align-items: center;
 
-  & > :first-child {
+  h1 {
     font-variant: small-caps;
   }
 `
@@ -41,27 +44,15 @@ const Avatar = styled.img`
   }
 `
 
-const Contacts = styled.div`
+const Bio = styled.section`
+  grid-column: span 4;
+`
+
+const Contacts = styled.section`
   grid-column: span 4;
   
   @media screen and (min-width: 780px) {
     grid-column: span 3;
-  }
-`
-
-const SkillsLeft = styled.div`
-  grid-column: span 4;
-  
-  @media screen and (min-width: 750px) {
-    grid-column: span 2;
-  }
-`
-
-const SkillsRight = styled.div`
-  grid-column: span 4;
-  
-  @media screen and (min-width: 750px) {
-    grid-column: span 2;
   }
 `
 
@@ -82,11 +73,13 @@ const List = styled.ul`
   }
 `
 
-// const calcAge = (date: string) => ((Date.now() - +new Date(date)) / 31557600000)
+const calcAge = (date: string) => ((Date.now() - +new Date(date)) / 2629800000)
 
 export const Status = () => {
-  // const age = ~~calcAge('1988-04-21')
-  // const exp = calcAge('2011-01-01').toFixed(2)
+  const age = ~~(calcAge('1988-04-21') / 12)
+  const exp = calcAge('2011-01-01')
+  const years = ~~(exp / 12)
+  const months = ~~(exp % 12)
 
   return (
     <BaseContainer>
@@ -94,8 +87,19 @@ export const Status = () => {
         <GridContainer>
           <Header>
             <h1>Dima Korolev</h1>
-            <h5>Frontend team&nbsp;leader @&nbsp;Tinkoff.ru</h5>
           </Header>
+
+          <Bio>
+            <h4>Bio</h4>
+            <p>{age} years old, {years}{months > 0 ? `+` : ''} years of programming experience.</p>
+            <p>
+              I am currently working at <a href="https://tinkoff.ru">Tinkoff</a>,
+              the world's largest fully online bank, as a Frontend Team Lead.
+            </p>
+            <p>
+              See more information at <a href="https://www.linkedin.com/in/dmitry-korolev/">my LinkedIn page</a>.
+            </p>
+          </Bio>
 
           <Avatar src='/static/avatar.png' alt='My avatar' />
 
@@ -113,42 +117,6 @@ export const Status = () => {
               </li>
             </List>
           </Contacts>
-
-          <SkillsLeft>
-            <h4>Dev skills</h4>
-            <List>
-              <li>
-                Javascript
-              </li>
-              <li>
-                React
-              </li>
-              <li>
-                HTML
-              </li>
-              <li>
-                CSS
-              </li>
-            </List>
-          </SkillsLeft>
-
-          <SkillsRight>
-            <h4 >Team skills</h4>
-            <List>
-              <li>
-                Team management
-              </li>
-              <li>
-                Agile
-              </li>
-              <li>
-                Developer relations
-              </li>
-              <li>
-                Teaching
-              </li>
-            </List>
-          </SkillsRight>
         </GridContainer>
       </article>
     </BaseContainer>
