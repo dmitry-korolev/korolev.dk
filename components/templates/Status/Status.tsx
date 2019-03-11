@@ -74,13 +74,18 @@ const List = styled.ul`
 `
 
 const calcAge = (date: string) => ((Date.now() - +new Date(date)) / 2629800000)
-
-export const Status = () => {
-  const age = ~~(calcAge('1988-04-21') / 12)
-  const exp = calcAge('2011-01-01')
+const getAge = (date: string) => `${~~(calcAge(date) / 12)} years`
+const getExp = (date: string) => {
+  const exp = calcAge(date)
   const years = ~~(exp / 12)
   const months = ~~(exp % 12)
 
+  return `${years} years${months > 0 ? ` and ${months} month${months > 1 ? 's' : ''}` : ''}`
+}
+
+export const Status = () => {
+  const age = getAge('1988-04-21')
+  const exp = getExp('2011-01-01')
   return (
     <BaseContainer>
       <article>
@@ -91,7 +96,7 @@ export const Status = () => {
 
           <Bio>
             <h4>Bio</h4>
-            <p>{age} years old, {years}{months > 0 ? `+` : ''} years of programming experience.</p>
+            <p><span title="Born at 1988, April 21">{age}</span> old, <span title="Starting from 2011">{exp}</span> of professional experience.</p>
             <p>
               I am currently working at <a href="https://tinkoff.ru">Tinkoff</a>,
               the world's largest fully online bank, as a Frontend Team Lead.
