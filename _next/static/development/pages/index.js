@@ -237,7 +237,26 @@ var Status = function Status() {
       lineNumber: 122
     },
     __self: this
-  }, "+7 (926) 211-08-93")))))));
+  }, "+7 (926) 211-08-93")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 124
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 125
+    },
+    __self: this
+  }, "Skype:\xA0"), " ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+    href: "skype:apathetic20",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 125
+    },
+    __self: this
+  }, "apathetic20")))))));
 };
 
 /***/ }),
