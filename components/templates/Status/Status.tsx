@@ -105,6 +105,9 @@ export const Status = () => {
               See more information at my <a href="https://www.linkedin.com/in/dmitry-korolev/">LinkedIn</a> and <a
               href="https://github.com/dmitry-korolev">GitHub</a> pages.
             </p>
+            <p>
+              My public talks are listed <a href="https://dmitry-korolev.github.io/talks/">here</a>.
+            </p>
           </Bio>
 
           <Avatar src='/static/avatar.png' alt='My avatar' />
@@ -120,6 +123,9 @@ export const Status = () => {
               </li>
               <li>
                 <span>Phone:&nbsp;</span> <a href="tel:+79262110893">+7 (926) 211-08-93</a>
+              </li>
+              <li>
+                <span>Skype:&nbsp;</span> <a href="skype:apathetic20">apathetic20</a>
               </li>
             </List>
           </Contacts>
